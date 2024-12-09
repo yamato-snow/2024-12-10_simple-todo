@@ -69,8 +69,16 @@ deactivate
 
 ### 4. プログラムの実行
 
+バックエンドの起動:
 ```bash
-python main.py
+cd backend
+uvicorn main:app --reload --port 8000
+```
+
+フロントエンドの起動:
+```bash
+cd frontend
+flet run main.py
 ```
 
 ### 5. 変更の保存
